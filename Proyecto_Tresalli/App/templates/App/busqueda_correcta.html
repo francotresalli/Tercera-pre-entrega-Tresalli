@@ -1,0 +1,13 @@
+{% extends 'App/base.html' %}
+
+{% load static%}
+
+{% block title %} Inicio {% endblock title%}
+
+
+{% block main %}
+
+{%for jugador in jugadores%}
+  <li>jugador: {{jugador.nombre}}| Equipo: {{jugador.equipo}}</li>
+{%endfor%}
+{% endblock main %}

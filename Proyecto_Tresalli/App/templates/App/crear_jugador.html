@@ -1,0 +1,16 @@
+{% extends 'App/base.html' %}
+
+{% load static%}
+
+{% block title %} Crear Jugador {% endblock title%}
+
+
+{% block main %}
+<form action="" method="POST">
+     {% csrf_token %}
+    <table>
+        {{ formulario.as_table }}
+    </table>
+    <input type="submit" value="Enviar">
+</form>    
+{% endblock main %}
